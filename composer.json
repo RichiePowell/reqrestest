@@ -1,0 +1,44 @@
+{
+    "name": "richiepowell/user-management",
+    "description": "A package for retrieving and creating users via a remote API.",
+    "type": "library",
+    "keywords": [
+        "api",
+        "users",
+        "http-client",
+        "composer-package"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Powell",
+            "email": "rich@richpowell.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "psr/http-client": "^1.0",
+        "psr/http-message": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RichiePowell\\UserManagement\\": "src/RichiePowell/UserManagement/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RichiePowell\\UserManagement\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
